@@ -1,6 +1,16 @@
+ 
+Moho_Auto-paint - is an application for quick color replacement in your projects.
 
-  Moho_Auto-paint is an application that replaces one color with another in the entire file. 
+The replacement takes place by replacing the encoded RGB color in the saved file. Multiple recursive substitution in multiple files at the same time is also supported.
 
-To use, enter the colors in HEX format and specify the path to the file.
+For security reasons, a copy of the file is created before starting work (but it would not be superfluous to make another copy manually). 
+  
+  How it works:
+   - Specify the path to one or more files.
+   - In turn, enter one or more HEX color encodings that you want to replace.
+   - It is important to enter the colors in the order in which you want to change them.
+      
+Example: 
 
-There may be several files. The program will create a backup and change the colors.
+  I want to replace "color_№1" with "color_№3" and "color_№2" with "color_№4". 
+To do this, I enter the encoding "color_№1" "color_№2" into the string and press enter to continue. Now I enter "color_№3", "color_№4".
